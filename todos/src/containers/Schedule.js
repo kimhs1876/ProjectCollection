@@ -1,5 +1,5 @@
 import React from 'react'
-import { TodoInput, TodoList } from '../component'
+import { TodoInput,TodoList } from '../components'
 import { Provider } from 'react-redux'
 import { store } from '../store'
 
@@ -11,5 +11,4 @@ const Schedule = () => {
     </Provider>
     </>)
 }
-
 export default Schedule

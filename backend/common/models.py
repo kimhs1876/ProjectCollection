@@ -1,10 +1,12 @@
 from dataclasses import dataclass
 
+
 @dataclass
-class DataTransferObject(object):
-    context: str # 경로
-    fname: str # 파일이름 
-    housing: object
+class FileDTO(object):
+
+    context: str
+    fname: str
+    dframe: object
 
     @property
     def context(self) -> str: return self._context
@@ -15,6 +17,6 @@ class DataTransferObject(object):
     @fname.setter
     def fname(self, fname): self._fname = fname
     @property
-    def housing(self) -> object: return self._housing
-    @housing.setter
-    def housing(self, housing): self._housing = housing
+    def dframe(self) -> object: return self._dframe
+    @dframe.setter
+    def dframe(self, dframe): self._dframe = dframe
