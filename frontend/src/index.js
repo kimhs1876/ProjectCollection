@@ -2,16 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Signup from './user/Signup'
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <App/> # APP을 매서드함수로 처리했다.
-    </BrowserRouter>
-    <Signup />
+    <App/> 
   </React.StrictMode>,
   document.getElementById('root')
 );
