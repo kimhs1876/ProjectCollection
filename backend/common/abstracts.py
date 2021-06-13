@@ -1,4 +1,4 @@
-from abc import * # 모듈의 모든 클래스와 메서드를 가져옴
+from abc import *
 
 class PrinterBase(metaclass=ABCMeta): # 추상클래스 1
     @abstractmethod
